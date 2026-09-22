@@ -15,7 +15,9 @@
     <!-- =========================
          HEADER
     ========================== -->
+
     <header class="header">
+
         <div class="container header-content">
 
             <a
@@ -39,22 +41,28 @@
             </a>
 
         </div>
+
     </header>
 
 
     <!-- =========================
          MAIN
     ========================== -->
+
     <main>
 
         <section class="hero container">
 
-            <!-- LEFT SIDE -->
+            <!-- =========================
+                 LEFT SIDE
+            ========================== -->
+
             <div class="hero-left">
 
                 <div class="eyebrow">
                     TREE CARE SPECIALISTS
                 </div>
+
 
                 <h1>
                     Safe, Reliable Tree Care
@@ -64,6 +72,7 @@
                     Surrounding Areas
                 </h1>
 
+
                 <p class="description">
                     Serving Santa Rosa and the surrounding areas,
                     <strong>ArborCare</strong> has been helping
@@ -71,6 +80,7 @@
                     beautiful for more than
                     <strong>35 years.</strong>
                 </p>
+
 
                 <p class="description">
                     Whether it's removing a risky oak,
@@ -81,18 +91,29 @@
                 </p>
 
 
-                <!-- REVIEWS -->
-                <div class="reviews">
+                <!-- =========================
+                     GOOGLE REVIEWS
+                ========================== -->
+
+                <a
+                    href="https://www.google.com/search?q=arborcare+group+inc"
+                    class="reviews"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View ArborCare Group customer reviews on Google"
+                >
 
                     <div class="google-logo">
                         G
                     </div>
 
+
                     <div class="review-info">
 
-                        <strong>
+                        <strong class="review-title">
                             Customer Reviews
                         </strong>
+
 
                         <div class="rating">
 
@@ -108,22 +129,47 @@
 
                     </div>
 
-                </div>
 
+                    <div class="review-arrow">
+                        →
+                    </div>
+
+                </a>
+
+
+                <!-- =========================
+                     GOOGLE TRUST TEXT
+                ========================== -->
 
                 <p class="trust">
+
                     Hundreds of local families trust
                     <strong>ArborCare</strong> —
-                    see why we're rated 4.8 stars on Google.
+
+                    <a
+                        href="https://www.google.com/search?q=arborcare+group+inc"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        see why we're rated 4.8 stars on Google.
+                    </a>
+
                 </p>
 
             </div>
 
 
-            <!-- RIGHT SIDE -->
+            <!-- =========================
+                 RIGHT SIDE
+            ========================== -->
+
             <div class="hero-right">
 
-                <!-- IMAGE GALLERY -->
+
+                <!-- =========================
+                     IMAGE GALLERY
+                ========================== -->
+
                 <div class="gallery">
 
                     <img
@@ -149,7 +195,10 @@
                 </div>
 
 
-                <!-- BUTTONS -->
+                <!-- =========================
+                     BUTTONS
+                ========================== -->
+
                 <div class="buttons">
 
                     <a
@@ -261,7 +310,7 @@
             aria-labelledby="estimateTitle"
         >
 
-            <!-- CLOSE BUTTON -->
+
             <button
                 type="button"
                 class="estimate-close"
@@ -272,7 +321,6 @@
             </button>
 
 
-            <!-- MODAL HEADER -->
             <div class="estimate-modal-header">
 
                 <h2 id="estimateTitle">
@@ -287,24 +335,30 @@
             </div>
 
 
-            <!-- FORM -->
+            <!-- =========================
+                 FORM
+            ========================== -->
+
             <form
                 class="estimate-form"
                 id="estimateForm"
             >
 
-                <!-- WEB3FORMS -->
+                <!-- Web3Forms -->
+
                 <input
                     type="hidden"
                     name="access_key"
                     value="bbe58352-626f-44be-99f4-a4bf75d2dd02"
                 >
 
+
                 <input
                     type="hidden"
                     name="subject"
                     value="New ArborCare Website Estimate Request"
                 >
+
 
                 <input
                     type="hidden"
@@ -314,6 +368,7 @@
 
 
                 <!-- FULL NAME -->
+
                 <div class="form-group">
 
                     <label for="name">
@@ -333,6 +388,7 @@
 
 
                 <!-- EMAIL -->
+
                 <div class="form-group">
 
                     <label for="email">
@@ -352,6 +408,7 @@
 
 
                 <!-- PHONE -->
+
                 <div class="form-group">
 
                     <label for="phone">
@@ -371,6 +428,7 @@
 
 
                 <!-- SERVICE -->
+
                 <div class="form-group">
 
                     <label for="service">
@@ -425,6 +483,7 @@
 
 
                 <!-- ADDRESS -->
+
                 <div class="form-group full-width">
 
                     <label for="address">
@@ -443,6 +502,7 @@
 
 
                 <!-- MESSAGE -->
+
                 <div class="form-group full-width">
 
                     <label for="message">
@@ -460,6 +520,7 @@
 
 
                 <!-- SUBMIT -->
+
                 <button
                     type="submit"
                     class="estimate-submit"
@@ -470,6 +531,7 @@
 
 
                 <!-- STATUS -->
+
                 <div
                     class="form-status"
                     id="formStatus"
@@ -509,20 +571,29 @@
 
     <script>
 
+        /* =========================
+           ELEMENTS
+        ========================== */
+
         const openEstimate =
             document.getElementById("openEstimate");
+
 
         const closeEstimate =
             document.getElementById("closeEstimate");
 
+
         const estimateOverlay =
             document.getElementById("estimateOverlay");
+
 
         const estimateForm =
             document.getElementById("estimateForm");
 
+
         const estimateSubmit =
             document.getElementById("estimateSubmit");
+
 
         const formStatus =
             document.getElementById("formStatus");
@@ -542,13 +613,17 @@
 
                 document.body.classList.add("modal-open");
 
-                setTimeout(function() {
 
-                    document
-                        .getElementById("name")
-                        .focus();
+                setTimeout(
+                    function() {
 
-                }, 150);
+                        document
+                            .getElementById("name")
+                            .focus();
+
+                    },
+                    150
+                );
 
             }
         );
@@ -574,7 +649,7 @@
 
 
         /* =========================
-           CLICK OUTSIDE MODAL
+           CLOSE WHEN CLICKING OUTSIDE
         ========================== */
 
         estimateOverlay.addEventListener(
@@ -615,7 +690,7 @@
 
 
         /* =========================
-           SEND FORM
+           WEB3FORMS
         ========================== */
 
         estimateForm.addEventListener(
@@ -653,18 +728,22 @@
                         await fetch(
                             "https://api.web3forms.com/submit",
                             {
+
                                 method: "POST",
 
                                 headers: {
+
                                     "Content-Type":
                                         "application/json",
 
                                     "Accept":
                                         "application/json"
+
                                 },
 
                                 body:
                                     JSON.stringify(data)
+
                             }
                         );
 
@@ -673,14 +752,12 @@
                         await response.json();
 
 
-                    /* =========================
-                       SUCCESS
-                    ========================== */
-
                     if (result.success) {
+
 
                         formStatus.textContent =
                             "Thank you! Your request has been sent successfully.";
+
 
                         formStatus.classList.add(
                             "success"
@@ -731,6 +808,7 @@
 
 
                 } catch (error) {
+
 
                     console.error(
                         "Form submission error:",
